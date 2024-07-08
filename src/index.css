@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+}
+.light {
+  background-color: #fafafa;
+  color: #240750;
+  transition: 2s background-color ease;
+}
+.dark {
+  background-color: #240750;
+  color: #fafafa;
+  transition: 2s background-color ease;
+}
+a {
+  text-decoration: none;
+  color: #240750;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.opacity1 {
+  opacity: 0.2;
+  transition: 1s opacity ease;
+}
+.opacity2 {
+  opacity: 1;
+  transition: 1s opacity ease;
+}
+::selection {
+  background-color: #240750;
+  color: #fafafa;
+}
+#react-doc-viewer {
+  background-color: #fafafa;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+ 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, white, #240750);
+  border-radius: 100px;
+}
+.cv-page {
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  .cv-page {
+    width: 63rem;
+  }
+}
+
+

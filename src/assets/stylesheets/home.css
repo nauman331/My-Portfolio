@@ -1,0 +1,42 @@
+.home-section {
+    margin-top: 5rem;
+    position: relative;
+}
+.home-section .name {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.home-section .home-para {
+    width: 300px;
+    text-align: center;
+}
+.home-section .cv-dark-button {
+    background-color: #fafafa;
+    color: #240750;
+    padding: .7rem 1.4rem;
+    margin-top: 2rem;
+}
+.home-section .cv-dark-button:hover {
+    background-color: transparent;
+    color: #fafafa;
+    border: 2px inset #fafafa;
+}
+.home-section .cv-light-button {
+    background-color: #240750;
+    color: #fafafa;
+    padding: .7rem 1.4rem;
+    margin-top: 2rem;
+}
+.home-section .cv-light-button:hover {
+    background-color: transparent;
+    color: #240750;
+    border: 2px inset #240750;
+}
+@media (max-width: 768px) {
+    .home-section .name {
+        font-size: 1.5rem;
+    } 
+}

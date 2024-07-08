@@ -1,0 +1,36 @@
+.client-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.client-card .name-img {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .5rem;
+    border-bottom: 2px solid gray;
+}
+.client-card .name-img img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+.client-card p{
+   text-align: center;
+   padding: 0rem 5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-container {
+    width: 100%;
+}
+@media (min-width: 1000px) {
+    .client-container {
+        width: 63rem;
+    }
+}

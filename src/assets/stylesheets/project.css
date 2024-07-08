@@ -1,0 +1,12 @@
+.svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+}
+@media (max-width: 1000px) {
+    .svg svg{
+        width: 300px;
+    }
+}
