@@ -3,6 +3,7 @@
     flex-direction: row;
     gap: 20rem;
     margin-top: 10rem;
+    padding: 0rem 2rem;
 }
 
 .skills, .about {
@@ -33,7 +34,7 @@ padding: 0rem .5rem;
     color: #fafafa;
     padding: 0rem .2rem;
     }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .about-section {
         flex-direction: column;
         gap: 3rem;
