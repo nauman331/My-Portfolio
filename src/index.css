@@ -15,7 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow-x: hidden;
+  overflow-x: hidden;  
 }
 .light {
   background-color: #fafafa;
@@ -37,14 +37,6 @@ section {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-}
-.opacity1 {
-  opacity: 0.2;
-  transition: 1s opacity ease;
-}
-.opacity2 {
-  opacity: 1;
-  transition: 1s opacity ease;
 }
 ::selection {
   background-color: #240750;

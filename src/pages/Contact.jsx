@@ -6,6 +6,7 @@ const Contact = () => {
 return (
 
 <>
+
     <h1 style={{textAlign: "center", marginTop: "2rem"}}>Get In Touch!</h1>
 <div className="form">
     <Form />

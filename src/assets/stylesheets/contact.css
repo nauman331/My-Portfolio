@@ -4,6 +4,7 @@
     justify-content: center;
     margin-top: 2rem;
     padding: 0%;
+    width: 25rem;
 }
 .form form {
     display: flex;
@@ -19,5 +20,6 @@
 @media (min-width: 1000px) {
     .form {
         padding: 0% 25rem;
+        width: 100%;
     }  
 }

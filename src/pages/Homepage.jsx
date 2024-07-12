@@ -71,7 +71,7 @@ const Homepage = () => {
            to='/cvpage' className={theme ? 'cv-dark-button cv' : 'cv-light-button cv'}
            {...register('pointer')}
            >Show Cv</NavLink>
-            </section>
+            
             <SvgAnimation id={1}/>
             <About />
             <SvgAnimation id={2}/>
@@ -81,7 +81,7 @@ const Homepage = () => {
             <SvgAnimation id={4}/>
             <Contact />
             <Footer />
-
+            </section>
         </>
     )
 }

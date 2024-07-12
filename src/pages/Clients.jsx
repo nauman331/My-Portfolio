@@ -38,10 +38,12 @@ const Clients = () => {
 
     return (
         <>
+      
         <h3 style={{textAlign: "center", marginTop:"3rem", padding: "0rem 1rem"}}>Dont trust me, Trust the feedback from my satisfied clients.</h3>
            <div className="client-container">
             <ClientCard data={data}/>
             </div>
+           
         </>
     )
 }

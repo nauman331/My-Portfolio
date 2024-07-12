@@ -16,7 +16,7 @@ function App() {
   const location = useLocation();
 
   const body = document.querySelector('body');
-  const { theme, show } = useTheme();
+  const { theme} = useTheme();
   body.className = theme ? "dark" : "light"
 
 
@@ -26,7 +26,6 @@ function App() {
     delay={10}
     >
     <Navbar />
-    <div className = {show ? "opacity1" : "opacity2"}>
       <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route exact index path="/" element={<Homepage />} />
@@ -37,7 +36,6 @@ function App() {
         <Route exact path="/cvpage" element={<ShowCv />} />
       </Routes>
       </AnimatePresence>
-      </div>
       </CursorifyProvider>
    
     </>

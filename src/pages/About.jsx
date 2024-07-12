@@ -10,7 +10,7 @@ const { theme } = useTheme();
 
     return (
         <>
-        <section className="about-section">
+        <div className="about-section">
             <div className="about">
             <h1>About Me</h1>
             <motion.p
@@ -37,7 +37,7 @@ const { theme } = useTheme();
                     )
                 }
             </motion.div>
-        </section>
+        </div>
         </>
     )
 }

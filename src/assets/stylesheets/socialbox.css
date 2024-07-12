@@ -13,7 +13,7 @@
   .social-media i {
     scale: 2;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     .social-media {
         left: auto;
         transform: rotate(270deg) !important;

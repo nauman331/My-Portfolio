@@ -6,19 +6,15 @@ export const AuthContext = createContext();
 export const AuthProvider = ({children}) => {
 
     const [theme, setTheme] = useState(false);
-    const [show, setShow] = useState(false);
 
 const StoreTheme = (ThemeValue) => {
     setTheme(ThemeValue);
 
 }
 
-const StoreNav = (NavValue) => {
-    setShow(NavValue)
 
-}
 
-    return <AuthContext.Provider value={{ StoreTheme, theme, show, StoreNav }}>
+    return <AuthContext.Provider value={{ StoreTheme, theme }}>
         {children}
     </AuthContext.Provider>
 }
