@@ -41,6 +41,7 @@ const Homepage = () => {
                     transition={{
                         ease: "linear",
                         duration: .8,
+                        delay: .5
                       }}
                     >I am</motion.h3>
                 </div>
@@ -50,6 +51,7 @@ const Homepage = () => {
                 transition={{
                     ease: "linear",
                     duration: .8,
+                    delay: .5
                   }}
                 className="first">Muhammad</motion.h1><motion.h1 
                 initial = {{y: 100}}
@@ -57,6 +59,7 @@ const Homepage = () => {
                 transition={{
                     ease: "linear",
                     duration: .8,
+                    delay: .5
                   }}
                 className="second">Nauman</motion.h1></div>
            <motion.p
@@ -65,13 +68,23 @@ const Homepage = () => {
             transition={{
                 ease: "linear",
                 duration: .8,
+                delay: .5
               }}
            className="home-para">I am a MERN FULL STACK web developer with 2+ years of freelancing experience in Frontend web development</motion.p>
+          <motion.div
+          initial={{y: -300}}
+          whileInView={{ y: 50 }}
+          transition={{
+            ease: "linear",
+            duration: .8,
+            delay: .5
+          }}
+          >
            <NavLink
            to='/cvpage' className={theme ? 'cv-dark-button cv' : 'cv-light-button cv'}
            {...register('pointer')}
            >Show Cv</NavLink>
-            
+            </motion.div>
             <SvgAnimation id={1}/>
             <About />
             <SvgAnimation id={2}/>

@@ -47,6 +47,7 @@ const Form = () => {
                 transition={{
                     ease: "linear",
                     duration: .8,
+                    delay: .5
                   }}
                     type="text"
                     onChange={(e) => setName(e.target.value)}
@@ -61,6 +62,7 @@ const Form = () => {
                  transition={{
                      ease: "linear",
                      duration: .8,
+                     delay: .5
                    }}
                     type="email"
                     onChange={(e) => setEmail(e.target.value)}
@@ -75,6 +77,7 @@ const Form = () => {
                  transition={{
                      ease: "linear",
                      duration: .8,
+                     delay: .5
                    }}
                     onChange={(e) => setMessage(e.target.value)}
                     value={message}
@@ -95,6 +98,7 @@ const Form = () => {
                  transition={{
                      ease: "linear",
                      duration: .8,
+                     delay: .5
                    }}
                 style={{ border: theme ? "2px solid #fafafa" : "2px solid #240750", backgroundColor: theme ? "#fafafa" : "#240750", color: theme ? "#240750" : "#fafafa" }}
                 {...register('pointer')}

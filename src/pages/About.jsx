@@ -16,7 +16,7 @@ const { theme } = useTheme();
             <motion.p
              initial={{ opacity: 0, x: -100 }}
              whileInView={{ opacity: 1, x: 0,}}
-             transition={{ type: "spring", stiffness: 100 }}
+             transition={{ type: "spring", stiffness: 100, delay: .5 }}
             className="about-para">
             Aside of tech i have 2+ years of Mathematics and Computer Science Teaching experience. I am also working as a freelancer and its my side hustle because currently I am a student of BS Computer Science at Punjab University Lahore and now I am learning new skills because I love to explore new technology.
             </motion.p>
@@ -24,7 +24,7 @@ const { theme } = useTheme();
             <motion.div className="skills"
              initial={{ opacity: 0, x: 100 }}
              whileInView={{ opacity: 1, x: 0,}}
-             transition={{ type: "spring", stiffness: 100 }}
+             transition={{ type: "spring", stiffness: 100, delay: .5 }}
             >
                 {
                     skills.map(item => 

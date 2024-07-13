@@ -20,6 +20,7 @@ const { theme } = useTheme();
                             transition={{
                                 ease: "linear",
                                 duration: .8,
+                                delay: .5
                               }}
                             key={index} className='client-card' style={{backgroundColor: theme ? "#fafafa" : "#240750", color: theme ? "#240750" : "#fafafa"}}>
                                 <div className="name-img">

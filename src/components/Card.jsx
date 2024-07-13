@@ -21,6 +21,7 @@ const Card = ({ data }) => {
                 transition={{
                     ease: "linear",
                     duration: .8,
+                    delay: .5
                   }}
                 >
              <StackedCarousel height={containerHeight}>

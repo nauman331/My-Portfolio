@@ -19,7 +19,7 @@ const SocialBox = () => {
              dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, delay: .5 }}
             className="social-media" style={{backgroundColor: theme ? "#240779" : "white"}}>
         <NavLink to='https://github.com/nauman331' {...register('pointer')}>
         <i className="fa-brands fa-github" style={{color: theme ? "white" : "#240750"}}></i>
