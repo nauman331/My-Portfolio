@@ -15,7 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow-x: hidden;  
+  overflow-x: hidden;
 }
 .light {
   background-color: #fafafa;
