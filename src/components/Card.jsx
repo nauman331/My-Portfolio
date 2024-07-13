@@ -12,7 +12,7 @@ const Card = ({ data }) => {
     const { theme } = useTheme();
     const register = useHoverRegister()
 
-    const containerHeight = 250;
+    const containerHeight = 300;
     return (
         <>
                 <motion.div style={{margin: "10rem 0rem"}}
