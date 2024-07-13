@@ -24,20 +24,24 @@ const Homepage = () => {
                 <SocialBox />
                 <div className="name" style={{marginTop: "5rem"}}>
                     <motion.h3
-                    initial = {{x: -100}}
-                    whileInView={{x: 0}}
+                    initial = {{x: -100, opacity: 0}}
+                    whileInView={{x: 0, opacity: 1}}
                     transition={{
                         ease: "linear",
                         duration: .8,
+                        delay: .5
                       }}
                     >Hello, </motion.h3>
                     <motion.h3
                     initial = {{rotate: "0deg"}}
                     whileInView={{rotate: "360deg"}}
+                    transition={{
+                      delay: .5
+                    }}
                     className="shake">👋</motion.h3>
                     <motion.h3
-                    initial = {{x: 100}}
-                    whileInView={{x: 0}}
+                    initial = {{x: 100, opacity:0}}
+                    whileInView={{x: 0, opacity:1}}
                     transition={{
                         ease: "linear",
                         duration: .8,
@@ -46,16 +50,16 @@ const Homepage = () => {
                     >I am</motion.h3>
                 </div>
                 <div className="name"><motion.h1
-                initial = {{y: -100}}
-                whileInView={{y: 0}}
+                initial = {{y: -100, opacity:0}}
+                whileInView={{y: 0, opacity: 1}}
                 transition={{
                     ease: "linear",
                     duration: .8,
                     delay: .5
                   }}
                 className="first">Muhammad</motion.h1><motion.h1 
-                initial = {{y: 100}}
-                whileInView={{y: 0}}
+                initial = {{y: 100, opacity: 0}}
+                whileInView={{y: 0, opacity:1}}
                 transition={{
                     ease: "linear",
                     duration: .8,

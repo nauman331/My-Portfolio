@@ -10,7 +10,7 @@ const { theme } = useTheme();
     return (
         <>     
 
-             <Carousel>
+             <Carousel showArrows={false}>
                 {
                     data.map((item, index) => {
                         return (
