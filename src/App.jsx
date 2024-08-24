@@ -1,14 +1,16 @@
 import { Routes, Route, useLocation } from "react-router-dom"
-import Homepage from "./pages/Homepage"
-import Navbar from "./components/Navbar"
 import { useTheme } from "./store/store"
 import { CursorifyProvider } from 'react-cursorify'
-import About from "./pages/About"
-import Projects from "./pages/Projects"
-import Contact from "./pages/Contact"
-import Clients from './pages/Clients';
-import ShowCv from "./pages/ShowCv";
 import { AnimatePresence } from "framer-motion"
+import {
+  Homepage,
+  Navbar,
+  About,
+  Projects,
+  Contact,
+  Clients,
+  ShowCv
+} from "./paths"
 
 
 

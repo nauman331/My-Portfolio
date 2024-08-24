@@ -9,6 +9,12 @@
     justify-content: center;
     gap: .5rem;
 }
+.home-section .under {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .home-section .home-para {
     width: 300px;
     text-align: center;

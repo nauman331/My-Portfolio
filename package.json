@@ -23,7 +23,9 @@
     "react-hot-toast": "^2.4.1",
     "react-responsive-3d-carousel": "^1.4.4",
     "react-responsive-carousel": "^3.2.23",
-    "react-router-dom": "^6.23.1"
+    "react-router-dom": "^6.23.1",
+    "three": "^0.167.1",
+    "vanta": "^0.5.24"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

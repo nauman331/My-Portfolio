@@ -153,7 +153,7 @@ const Navbar = () => {
             variants={hideNavItemsVariant}
             onClick={() => setMobileNavOpen(true)}
           >
-           <i className="fa-solid fa-burger"></i>
+         <i class="fa-solid fa-bars-staggered"></i>
           </motion.div>
         </div>
         <NavLink className='name' to='/' {...register('pointer')} style={{color: theme ? "#fafafa" : "#240750"}}>Muhammad Nauman</NavLink>
