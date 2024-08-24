@@ -20,6 +20,7 @@ const Homepage = () => {
   const sectionRef = useRef(null);
   var bg = theme ? "#240750" : "#fafafa";
   var front = theme ? '#fafafa' : "#240750";
+  
   useEffect(() => {
     const vantaEffect = GLOBE({
       el: sectionRef.current,
