@@ -15,9 +15,11 @@
   }
   @media (max-width: 1000px) {
     .social-media {
-        left: 7rem;
-        transform: rotate(270deg) !important;
-        top: -7rem
+      transform: rotate(270deg) !important;
+      top: -30%;
+      left: 45%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
     }
     .social-media i {
         transform: rotate(90deg);

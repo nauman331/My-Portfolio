@@ -22,7 +22,7 @@ const Navbar = () => {
   })
 
   const HandleTheme = () => {
-    StoreTheme(!theme)
+    StoreTheme(theme)
   }
 
 

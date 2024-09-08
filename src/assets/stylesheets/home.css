@@ -45,4 +45,7 @@
     .home-section .name {
         font-size: 1.5rem;
     } 
+    .homer {
+        width: 100vw;
+    }
 }

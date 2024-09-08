@@ -16,8 +16,8 @@ const Card = ({ data }) => {
     return (
         <>
                 <motion.div style={{margin: "10rem 0rem"}}
-                initial = {{scale: 0, opacity: 0, rotate: 0}}
-                whileInView={{scale: 1, opacity: 1, rotate: 360}}
+                initial = {{opacity: 0, y: 100}}
+                whileInView={{opacity: 1, y: 0}}
                 transition={{
                     ease: "linear",
                     duration: .8,

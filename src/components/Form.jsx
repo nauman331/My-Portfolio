@@ -90,7 +90,7 @@ const Form = () => {
                 <motion.button type="submit"
                  initial = {{scale: 0, opacity: 0}}
                  whileInView={{scale: 1, opacity: 1}}
-                 whileHover={{ skew: 10 }}
+                 whileHover={{ scale: 1.1 }}
             whileTap={{
               scale: 0.8,
               rotate: -90,

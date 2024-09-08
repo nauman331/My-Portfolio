@@ -8,7 +8,7 @@ export const AuthProvider = ({children}) => {
     const [theme, setTheme] = useState(false);
 
 const StoreTheme = (ThemeValue) => {
-    setTheme(ThemeValue);
+    setTheme(!ThemeValue);
 
 }
 

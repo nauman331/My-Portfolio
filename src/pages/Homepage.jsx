@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../assets/stylesheets/home.css";
 import { NavLink } from "react-router-dom";
 import { useTheme } from "../store/store";
@@ -18,6 +18,11 @@ const Homepage = () => {
   const { theme } = useTheme();
   const register = useHoverRegister();
   const sectionRef = useRef(null);
+  const [currentRole, setCurrentRole] = useState("FRONTEND");
+
+  // Text rotation array
+  const roles = ["FRONTEND","BACKEND", "FULL STACK", "ANDROID", "IOS" ];
+  
   var bg = theme ? "#011933" : "#FAFAFA";
   var front = theme ? '#FAFAFA' : "#011933";
   
@@ -43,105 +48,125 @@ const Homepage = () => {
     };
   }, [theme]);
 
-  return (
-    <section  className="home-section">
-      <div ref={sectionRef}>
-      <SocialBox />
-      <div className="name" style={{marginTop: "5rem"}}>
-        <motion.h3
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            ease: "linear",
-            duration: .8,
-            delay: .5,
-          }}
-        >
-          Hello,
-        </motion.h3>
-        <motion.h3
-          initial={{ rotate: "0deg" }}
-          whileInView={{ rotate: "360deg" }}
-          transition={{
-            delay: .5,
-          }}
-          className="shake"
-        >
-          👋
-        </motion.h3>
-        <motion.h3
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            ease: "linear",
-            duration: .8,
-            delay: .5,
-          }}
-        >
-          I am
-        </motion.h3>
-      </div>
-      <div className="name">
-        <motion.h1
-          initial={{ y: -100, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            ease: "linear",
-            duration: .8,
-            delay: .5,
-          }}
-          className="first"
-        >
-          Muhammad
-        </motion.h1>
-        <motion.h1
-          initial={{ y: 100, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            ease: "linear",
-            duration: .8,
-            delay: .5,
-          }}
-          className="second"
+  useEffect(() => {
+    // Change role every 3 seconds
+    const roleInterval = setInterval(() => {
+      setCurrentRole((prevRole) => {
+        const nextIndex = (roles.indexOf(prevRole) + 1) % roles.length;
+        return roles[nextIndex];
+      });
+    }, 2000); // Change role every 3 seconds
 
-        >
-          Nauman
-        </motion.h1>
-      </div>
-      <div className="under">
-      <motion.p
-        initial={{ scale: 0, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }}
-        transition={{
-          ease: "linear",
-          duration: .8,
-          delay: .5,
-        }}
-        className="home-para"
-      >
-        I am a MERN FULL STACK web developer with 2+ years of freelancing experience in Frontend web development
-      </motion.p>
-      <motion.div
-        initial={{ y: -300 }}
-        whileInView={{ y: 50 }}
-        transition={{
-          ease: "linear",
-          duration: .8,
-          delay: .5,
-        }}
-      >
-        <NavLink
-          to="/cvpage"
-          className={theme ? 'cv-dark-button cv' : 'cv-light-button cv'}
-          {...register('pointer')}
-        >
-          Show Cv
-        </NavLink>
-      </motion.div>
-      </div>
-      <div style={{marginTop: "5rem"}}>
-      <SvgAnimation id={1} />
-      </div>
+    return () => clearInterval(roleInterval); // Clear interval on unmount
+  }, []);
+
+  return (
+    <section className="home-section">
+      <div ref={sectionRef} className="homer">
+        <SocialBox />
+        <div className="name" style={{ marginTop: "5rem" }}>
+          <motion.h3
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              ease: "linear",
+              duration: 0.8,
+              delay: 0.5,
+            }}
+          >
+            Hello,
+          </motion.h3>
+          <motion.h3
+            initial={{ rotate: "0deg" }}
+            whileInView={{ rotate: "360deg" }}
+            transition={{
+              delay: 0.5,
+            }}
+            className="shake"
+          >
+            👋
+          </motion.h3>
+          <motion.h3
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              ease: "linear",
+              duration: 0.8,
+              delay: 0.5,
+            }}
+          >
+            I am
+          </motion.h3>
+        </div>
+        <div className="name">
+          <motion.h1
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              ease: "linear",
+              duration: 0.8,
+              delay: 0.5,
+            }}
+            className="first"
+          >
+            Muhammad
+          </motion.h1>
+          <motion.h1
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              ease: "linear",
+              duration: 0.8,
+              delay: 0.5,
+            }}
+            className="second"
+          >
+            Nauman
+          </motion.h1>
+        </div>
+        <div className="under">
+          <motion.p
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              ease: "linear",
+              duration: 0.8,
+              delay: 0.5,
+            }}
+            className="home-para"
+          >
+            I am a <motion.span
+              key={currentRole}
+              initial={{ opacity: 0}}
+              animate={{ opacity: 1}}
+              exit={{ opacity: 0}}
+              transition={{ duration: 0.5 }}
+              style={{fontSize: "large", fontWeight: "bolder"}}
+            >
+              {currentRole}
+            </motion.span> developer with 2+ years of freelancing experience.
+          </motion.p>
+          <motion.div
+            initial={{ y: -300 }}
+            whileInView={{ y: 50 }}
+            transition={{
+              ease: "linear",
+              duration: 0.8,
+              delay: 0.5,
+            }}
+          >
+            <NavLink
+              to="/cvpage"
+              className={theme ? 'cv-dark-button cv' : 'cv-light-button cv'}
+              {...register('pointer')}
+            >
+              Show Cv
+            </NavLink>
+          </motion.div>
+        </div>
+        <div style={{ marginTop: "5rem" }}>
+          <SvgAnimation id={1} />
+        </div>
       </div>
       <About />
       <SvgAnimation id={2} />
