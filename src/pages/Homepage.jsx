@@ -139,7 +139,9 @@ const Homepage = () => {
         </NavLink>
       </motion.div>
       </div>
+      <div style={{marginTop: "5rem"}}>
       <SvgAnimation id={1} />
+      </div>
       </div>
       <About />
       <SvgAnimation id={2} />
