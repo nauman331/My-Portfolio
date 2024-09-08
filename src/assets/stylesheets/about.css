@@ -26,13 +26,13 @@
     text-align: center;
 }
 .skill-dark {
-background-color: #fafafa;
-color: #240750;
+background-color: #F0F8FF;
+color: #011933;
 padding: 0rem .5rem;
 }
 .skill-light {
-    background-color: #240750;
-    color: #fafafa;
+    background-color: #011933;
+    color: #F0F8FF;
     padding: 0rem .2rem;
     }
 @media (max-width: 1000px) {

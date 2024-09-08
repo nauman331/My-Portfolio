@@ -22,7 +22,7 @@ const { theme } = useTheme();
                                 duration: .8,
                                 delay: .5
                               }}
-                            key={index} className='client-card' style={{backgroundColor: theme ? "#fafafa" : "#240750", color: theme ? "#240750" : "#fafafa"}}>
+                            key={index} className='client-card' style={{backgroundColor: theme ? "#F0F8FF" : "#011933", color: theme ? "#011933" : "#F0F8FF"}}>
                                 <div className="name-img">
                                 <img src={item.imgurl} alt={item.name} />
                                 <h3>{item.name}</h3>

@@ -18,18 +18,18 @@ body {
   overflow-x: hidden;
 }
 .light {
-  background-color: #fafafa;
-  color: #240750;
+  background-color: #F0F8FF;
+  color: #011933;
   transition: 2s background-color ease;
 }
 .dark {
-  background-color: #240750;
-  color: #fafafa;
+  background-color: #011933;
+  color: #F0F8FF;
   transition: 2s background-color ease;
 }
 a {
   text-decoration: none;
-  color: #240750;
+  color: #011933;
 }
 section {
   display: flex;
@@ -39,11 +39,11 @@ section {
   width: 100%;
 }
 ::selection {
-  background-color: #240750;
-  color: #fafafa;
+  background-color: #011933;
+  color: #F0F8FF;
 }
 #react-doc-viewer {
-  background-color: #fafafa;
+  background-color: #F0F8FF;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -58,7 +58,7 @@ section {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, white, #240750);
+  background: linear-gradient(to bottom, white, #011933);
   border-radius: 100px;
 }
 .cv-page {

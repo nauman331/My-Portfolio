@@ -12,14 +12,14 @@ import SocialBox from "../components/SocialBox";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import * as THREE from 'three';
-import GLOBE from 'vanta/dist/vanta.globe.min'; // Import the GLOBE effect instead
+import GLOBE from 'vanta/dist/vanta.globe.min'; 
 
 const Homepage = () => {
   const { theme } = useTheme();
   const register = useHoverRegister();
   const sectionRef = useRef(null);
-  var bg = theme ? "#240750" : "#fafafa";
-  var front = theme ? '#fafafa' : "#240750";
+  var bg = theme ? "#011933" : "#F0F8FF";
+  var front = theme ? '#F0F8FF' : "#011933";
   
   useEffect(() => {
     const vantaEffect = GLOBE({
@@ -103,6 +103,7 @@ const Homepage = () => {
             delay: .5,
           }}
           className="second"
+
         >
           Nauman
         </motion.h1>
