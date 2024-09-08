@@ -18,13 +18,13 @@ body {
   overflow-x: hidden;
 }
 .light {
-  background-color: #F0F8FF;
+  background-color: #FAFAFA;
   color: #011933;
   transition: 2s background-color ease;
 }
 .dark {
   background-color: #011933;
-  color: #F0F8FF;
+  color: #FAFAFA;
   transition: 2s background-color ease;
 }
 a {
@@ -40,10 +40,10 @@ section {
 }
 ::selection {
   background-color: #011933;
-  color: #F0F8FF;
+  color: #FAFAFA;
 }
 #react-doc-viewer {
-  background-color: #F0F8FF;
+  background-color: #FAFAFA;
 }
 /* width */
 ::-webkit-scrollbar {

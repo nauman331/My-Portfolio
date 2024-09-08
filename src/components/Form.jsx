@@ -54,7 +54,7 @@ const Form = () => {
                     value={name}
                     placeholder='Your Name'
                     required
-                    style={{ border: theme ? "2px solid #F0F8FF" : "2px solid #011933", backgroundColor: theme ? "#011933" : "#F0F8FF", color: theme ? "#F0F8FF" : "#011933" }}
+                    style={{ border: theme ? "2px solid #FAFAFA" : "2px solid #011933", backgroundColor: theme ? "#011933" : "#FAFAFA", color: theme ? "#FAFAFA" : "#011933" }}
                 />
                 <motion.input
                  initial = {{x: 200, opacity: 0}}
@@ -69,7 +69,7 @@ const Form = () => {
                     value={email}
                     placeholder='Email'
                     required
-                    style={{ border: theme ? "2px solid #F0F8FF" : "2px solid #011933", backgroundColor: theme ? "#011933" : "#F0F8FF", color: theme ? "#F0F8FF" : "#011933" }}
+                    style={{ border: theme ? "2px solid #FAFAFA" : "2px solid #011933", backgroundColor: theme ? "#011933" : "#FAFAFA", color: theme ? "#FAFAFA" : "#011933" }}
                 />
                 <motion.textarea
                  initial = {{y: 200, opacity: 0}}
@@ -85,7 +85,7 @@ const Form = () => {
                     required
                     cols={30}
                     rows={10}
-                    style={{ border: theme ? "2px solid #F0F8FF" : "2px solid #011933", backgroundColor: theme ? "#011933" : "#F0F8FF", color: theme ? "#F0F8FF" : "#011933" }}
+                    style={{ border: theme ? "2px solid #FAFAFA" : "2px solid #011933", backgroundColor: theme ? "#011933" : "#FAFAFA", color: theme ? "#FAFAFA" : "#011933" }}
                 ></motion.textarea>
                 <motion.button type="submit"
                  initial = {{scale: 0, opacity: 0}}
@@ -100,7 +100,7 @@ const Form = () => {
                      duration: .8,
                      delay: .5
                    }}
-                style={{ border: theme ? "2px solid #F0F8FF" : "2px solid #011933", backgroundColor: theme ? "#F0F8FF" : "#011933", color: theme ? "#011933" : "#F0F8FF" }}
+                style={{ border: theme ? "2px solid #FAFAFA" : "2px solid #011933", backgroundColor: theme ? "#FAFAFA" : "#011933", color: theme ? "#011933" : "#FAFAFA" }}
                 {...register('pointer')}
                 >Send Message</motion.button>
             </form>

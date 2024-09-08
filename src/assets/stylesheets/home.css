@@ -20,19 +20,19 @@
     text-align: center;
 }
 .home-section .cv-dark-button {
-    background-color: #F0F8FF;
+    background-color: #FAFAFA;
     color: #011933;
     padding: .7rem 1.4rem;
     margin-top: 2rem;
 }
 .home-section .cv-dark-button:hover {
     background-color: transparent;
-    color: #F0F8FF;
-    border: 2px inset #F0F8FF;
+    color: #FAFAFA;
+    border: 2px inset #FAFAFA;
 }
 .home-section .cv-light-button {
     background-color: #011933;
-    color: #F0F8FF;
+    color: #FAFAFA;
     padding: .7rem 1.4rem;
     margin-top: 2rem;
 }

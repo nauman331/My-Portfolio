@@ -147,7 +147,7 @@ const Navbar = () => {
       }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.35, ease: "easeInOut" }}
-      style={{ backgroundColor: theme ? "#011933" : "#F0F8FF" }}>
+      style={{ backgroundColor: theme ? "#011933" : "#FAFAFA" }}>
         <div className="menu-container">
           <motion.div
             variants={hideNavItemsVariant}
@@ -156,31 +156,31 @@ const Navbar = () => {
          <i class="fa-solid fa-bars-staggered"></i>
           </motion.div>
         </div>
-        <NavLink className='name' to='/' {...register('pointer')} style={{color: theme ? "#F0F8FF" : "#011933"}}>Muhammad Nauman</NavLink>
+        <NavLink className='name' to='/' {...register('pointer')} style={{color: theme ? "#FAFAFA" : "#011933"}}>Muhammad Nauman</NavLink>
         <div className="desktop-nav">
         <NavLink
-        style={{color: theme ? "#F0F8FF" : "#011933"}}
+        style={{color: theme ? "#FAFAFA" : "#011933"}}
         to="/" {...register('pointer')}>
               HomePage
             </NavLink>
             <NavLink
-            style={{color: theme ? "#F0F8FF" : "#011933"}}
+            style={{color: theme ? "#FAFAFA" : "#011933"}}
             to="/aboutme" {...register('pointer')}>
               About
             </NavLink>
             <NavLink
-            style={{color: theme ? "#F0F8FF" : "#011933"}}
+            style={{color: theme ? "#FAFAFA" : "#011933"}}
             to="/projects" {...register('pointer')}>
               Projects
             </NavLink>
             <NavLink
-            style={{color: theme ? "#F0F8FF" : "#011933"}}
+            style={{color: theme ? "#FAFAFA" : "#011933"}}
             to="/clients" {...register('pointer')}>
               Clients
             </NavLink>
         
             <NavLink
-            style={{color: theme ? "#F0F8FF" : "#011933"}}
+            style={{color: theme ? "#FAFAFA" : "#011933"}}
             to="/contact" {...register('pointer')}>
               Contact
             </NavLink>
@@ -206,21 +206,21 @@ const Navbar = () => {
         animate={mobileNavOpen ? "opened" : "closed"}
       >
         
-        <motion.div variants={mobileMenuVariant} className="mobile-menu" style={{backgroundColor: theme ? "#F0F8FF" : "#011933"}}>
+        <motion.div variants={mobileMenuVariant} className="mobile-menu" style={{backgroundColor: theme ? "#FAFAFA" : "#011933"}}>
           <motion.button
             variants={fadeInVariant}
             onClick={() => setMobileNavOpen(false)}
           >
-            <i className="fa-solid fa-circle-up" style={{color: theme ? "#011933" : "#F0F8FF"}}></i>
+            <i className="fa-solid fa-circle-up" style={{color: theme ? "#011933" : "#FAFAFA"}}></i>
           </motion.button>
           <motion.ul variants={ulVariant}>
             {MOBILE_NAV_ITEMS.map(navItem => (
               <motion.li whileTap={{ scale: 0.95 }} key={navItem.id}>
-                <NavLink to={navItem.link} onClick={() => setMobileNavOpen(false)}><motion.div variants={liVariant} style={{color: theme ? "#011933" : "#F0F8FF"}}>{navItem.navTitle}</motion.div></NavLink>
+                <NavLink to={navItem.link} onClick={() => setMobileNavOpen(false)}><motion.div variants={liVariant} style={{color: theme ? "#011933" : "#FAFAFA"}}>{navItem.navTitle}</motion.div></NavLink>
               </motion.li>
             ))}
           </motion.ul>
-          <motion.div variants={fadeInVariant} className="contact" style={{color: theme ? "#011933" : "#F0F8FF"}}>
+          <motion.div variants={fadeInVariant} className="contact" style={{color: theme ? "#011933" : "#FAFAFA"}}>
             <h5>+92 331 83 888 05</h5>
             <h5>nauman33183@gmail.com</h5>
           </motion.div>

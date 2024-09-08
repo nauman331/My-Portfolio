@@ -27,13 +27,13 @@ const Card = ({ data }) => {
              <StackedCarousel height={containerHeight}>
                 {data.map((item, i) => {
                     return (
-                        <motion.div key={i} className="project" style={{backgroundColor: theme ? "#F0F8FF" : "#011933", color: theme ? "#011933" : "#F0F8FF"}}>
+                        <motion.div key={i} className="project" style={{backgroundColor: theme ? "#FAFAFA" : "#011933", color: theme ? "#011933" : "#FAFAFA"}}>
                             <img src={item.imgurl} alt={item.name} />
                             <h2>{item.name}</h2>
                             <h5>{item.description}</h5>
                             <NavLink
                             {...register('pointer')}
-                            to={item.projectlink} style={{backgroundColor: theme ? "#011933" : "#F0F8FF", color: theme ? "#F0F8FF" : "#011933", padding: "5px 10px", marginTop: "10px"}}>See Demo</NavLink>
+                            to={item.projectlink} style={{backgroundColor: theme ? "#011933" : "#FAFAFA", color: theme ? "#FAFAFA" : "#011933", padding: "5px 10px", marginTop: "10px"}}>See Demo</NavLink>
                         </motion.div>
                     )
                 })}

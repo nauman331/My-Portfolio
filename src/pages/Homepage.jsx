@@ -18,8 +18,8 @@ const Homepage = () => {
   const { theme } = useTheme();
   const register = useHoverRegister();
   const sectionRef = useRef(null);
-  var bg = theme ? "#011933" : "#F0F8FF";
-  var front = theme ? '#F0F8FF' : "#011933";
+  var bg = theme ? "#011933" : "#FAFAFA";
+  var front = theme ? '#FAFAFA' : "#011933";
   
   useEffect(() => {
     const vantaEffect = GLOBE({
