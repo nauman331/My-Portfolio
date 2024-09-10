@@ -12,7 +12,7 @@ import SocialBox from "../components/SocialBox";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import * as THREE from 'three';
-import GLOBE from 'vanta/dist/vanta.globe.min'; 
+import GLOBE from 'vanta/dist/vanta.globe.min';
 
 const Homepage = () => {
   const { theme } = useTheme();
@@ -20,12 +20,11 @@ const Homepage = () => {
   const sectionRef = useRef(null);
   const [currentRole, setCurrentRole] = useState("FRONTEND");
 
-  // Text rotation array
-  const roles = ["FRONTEND","BACKEND", "FULL STACK", "ANDROID", "IOS" ];
-  
+  const roles = ["FRONTEND", "BACKEND", "FULL STACK", "ANDROID", "IOS"];
+
   var bg = theme ? "#011933" : "#FAFAFA";
   var front = theme ? '#FAFAFA' : "#011933";
-  
+
   useEffect(() => {
     const vantaEffect = GLOBE({
       el: sectionRef.current,
@@ -36,10 +35,10 @@ const Homepage = () => {
       minHeight: 200.00,
       minWidth: 200.00,
       scale: 1.00,
-      scaleMobile: 0.3,
+      scaleMobile: 1.00,
       color: front,
       color2: front,
-      size: 0.60,
+      size: 0.7,
       backgroundColor: bg,
     });
 
@@ -49,13 +48,13 @@ const Homepage = () => {
   }, [theme]);
 
   useEffect(() => {
-    // Change role every 3 seconds
+    // Change role every 2 seconds
     const roleInterval = setInterval(() => {
       setCurrentRole((prevRole) => {
         const nextIndex = (roles.indexOf(prevRole) + 1) % roles.length;
         return roles[nextIndex];
       });
-    }, 2000); // Change role every 3 seconds
+    }, 2000); // Change role every 2 seconds
 
     return () => clearInterval(roleInterval); // Clear interval on unmount
   }, []);
@@ -63,6 +62,9 @@ const Homepage = () => {
   return (
     <section className="home-section">
       <div ref={sectionRef} className="homer">
+        {/* Background overlay for mobile mode */}
+        <div className="homer-overlay"></div>
+
         <SocialBox />
         <div className="name" style={{ marginTop: "5rem" }}>
           <motion.h3
@@ -135,16 +137,22 @@ const Homepage = () => {
             }}
             className="home-para"
           >
-            I am a <motion.span
+            I am a{" "}
+            <motion.span
               key={currentRole}
-              initial={{ opacity: 0}}
-              animate={{ opacity: 1}}
-              exit={{ opacity: 0}}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
-              style={{fontSize: "large", fontWeight: "bolder"}}
+              style={{
+                fontSize: "large",
+                fontWeight: "bolder",
+                borderBottom: "2px solid",
+              }}
             >
               {currentRole}
-            </motion.span> developer with 2+ years of freelancing experience.
+            </motion.span>{" "}
+            developer with 2+ years of freelancing experience.
           </motion.p>
           <motion.div
             initial={{ y: -300 }}
@@ -157,8 +165,8 @@ const Homepage = () => {
           >
             <NavLink
               to="/cvpage"
-              className={theme ? 'cv-dark-button cv' : 'cv-light-button cv'}
-              {...register('pointer')}
+              className={theme ? "cv-dark-button cv" : "cv-light-button cv"}
+              {...register("pointer")}
             >
               Show Cv
             </NavLink>
