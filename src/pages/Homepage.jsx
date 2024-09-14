@@ -185,6 +185,7 @@ const Homepage = () => {
       <Contact />
       <Footer />
     </section>
+
   );
 };
 
