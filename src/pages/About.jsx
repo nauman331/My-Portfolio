@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
 
-const skills = ["REACT JS", "NEXTJS", "TAILWIND / SHADCN", "NODEJS", "EXPRESS JS", "MONGO DB", "REACT NATIVE", "FRAMER MOTION", "GIT/ GITHUB", "OOPS/DSA", "MVC PATTERN", "POSTMAN/ INSONMIA"]
+const skills = ["REACT JS", "NEXTJS", "TAILWIND / SHADCN", "NODEJS", "EXPRESS JS", "MONGO DB", "REACT NATIVE", "FRAMER MOTION", "GIT/ GITHUB", "OOPS/DSA", "MVC PATTERN", "TYPESCRIPT"]
 const { theme } = useTheme();
 
     return (
