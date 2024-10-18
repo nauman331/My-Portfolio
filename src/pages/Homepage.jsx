@@ -43,7 +43,6 @@ const Homepage = () => {
       size: 0.7,
       backgroundColor: bg,
     });
-
     // Delay hiding the loading screen for at least 2 seconds
     const loadingTimeout = setTimeout(() => {
       setLoading(false);

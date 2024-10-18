@@ -25,7 +25,7 @@ function App() {
   return (
     <>
     <CursorifyProvider 
-    delay={10}
+    delay={7}
     >
     <Navbar />
       <AnimatePresence>
