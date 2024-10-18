@@ -10,6 +10,7 @@ import Contact from './Contact';
 import SvgAnimation from "../components/SvgAnimation";
 import SocialBox from "../components/SocialBox";
 import Footer from "../components/Footer";
+import Loading from "../components/Loading";
 import { motion } from "framer-motion";
 import * as THREE from 'three';
 import GLOBE from 'vanta/dist/vanta.globe.min';
@@ -19,12 +20,12 @@ const Homepage = () => {
   const register = useHoverRegister();
   const sectionRef = useRef(null);
   const [currentRole, setCurrentRole] = useState("FRONTEND");
+  const [loading, setLoading] = useState(true)
 
   const roles = ["FRONTEND", "BACKEND", "FULL STACK", "ANDROID", "IOS"];
 
   var bg = theme ? "#011933" : "#FAFAFA";
   var front = theme ? '#FAFAFA' : "#011933";
-
   useEffect(() => {
     const vantaEffect = GLOBE({
       el: sectionRef.current,
@@ -41,10 +42,11 @@ const Homepage = () => {
       size: 0.7,
       backgroundColor: bg,
     });
-
+    setLoading(false)
     return () => {
       if (vantaEffect) vantaEffect.destroy();
     };
+    
   }, [theme]);
 
   useEffect(() => {
@@ -52,15 +54,19 @@ const Homepage = () => {
     const roleInterval = setInterval(() => {
       setCurrentRole((prevRole) => {
         const nextIndex = (roles.indexOf(prevRole) + 1) % roles.length;
+      
         return roles[nextIndex];
       });
     }, 2000); // Change role every 2 seconds
 
     return () => clearInterval(roleInterval); // Clear interval on unmount
   }, []);
-
+ 
   return (
+  <>
+  
     <section className="home-section">
+      
       <div ref={sectionRef} className="homer">
         {/* Background overlay for mobile mode */}
         <div className="homer-overlay"></div>
@@ -176,6 +182,10 @@ const Homepage = () => {
           <SvgAnimation id={1} />
         </div>
       </div>
+      {
+
+loading ? <Loading /> :
+<div>
       <About />
       <SvgAnimation id={2} />
       <Projects />
@@ -184,8 +194,11 @@ const Homepage = () => {
       <SvgAnimation id={4} />
       <Contact />
       <Footer />
+      </div>
+}
     </section>
 
+    </>
   );
 };
 

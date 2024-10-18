@@ -1,9 +1,9 @@
 import "../assets/stylesheets/client.css"
-import pic1 from "../assets/images/clients/client1.jpeg"
-import pic2 from "../assets/images/clients/client2.jpeg"
-import pic3 from "../assets/images/clients/client3.jpeg"
-import pic4 from "../assets/images/clients/client4.jpeg"
-import pic5 from "../assets/images/clients/client5.png"
+import pic1 from "../assets/images/clients/client1.webp"
+import pic2 from "../assets/images/clients/client2.webp"
+import pic3 from "../assets/images/clients/client3.webp"
+import pic4 from "../assets/images/clients/client4.webp"
+import pic5 from "../assets/images/clients/client5.webp"
 import ClientCard from "../components/ClientCard"
 
 const Clients = () => {

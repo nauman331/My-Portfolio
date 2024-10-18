@@ -1,10 +1,10 @@
 import "../assets/stylesheets/project.css"
 import Card from "../components/Card"
-import pic1 from "../assets/images/projects/project1.png"
-import pic2 from "../assets/images/projects/project2.png"
-import pic3 from "../assets/images/projects/project3.png"
-import pic4 from "../assets/images/projects/project4.png"
-import pic5 from "../assets/images/projects/project5.png"
+import pic1 from "../assets/images/projects/project1.webp"
+import pic2 from "../assets/images/projects/project2.webp"
+import pic3 from "../assets/images/projects/project3.webp"
+import pic4 from "../assets/images/projects/project4.webp"
+import pic5 from "../assets/images/projects/project5.webp"
 import pic6 from "../assets/images/projects/more.webp"
 
 const Projects = () => {
