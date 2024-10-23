@@ -1,6 +1,7 @@
 .about-section {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     gap: 20rem;
     margin-top: 10rem;

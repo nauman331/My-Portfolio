@@ -1,28 +1,36 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 export const AuthContext = createContext();
 
-// eslint-disable-next-line react/prop-types
-export const AuthProvider = ({children}) => {
+export const AuthProvider = ({ children }) => {
+    const [theme, setTheme] = useState(() => {
+        // Retrieve theme from localStorage or default to false
+        const savedTheme = localStorage.getItem('theme');
+        return savedTheme !== null ? JSON.parse(savedTheme) : false;
+    });
 
-    const [theme, setTheme] = useState(false);
+    const StoreTheme = (ThemeValue) => {
+        const newTheme = !ThemeValue;
+        setTheme(newTheme);
+        localStorage.setItem('theme', JSON.stringify(newTheme));
+    };
 
-const StoreTheme = (ThemeValue) => {
-    setTheme(!ThemeValue);
+    useEffect(() => {
+        // Store the theme in localStorage whenever it changes
+        localStorage.setItem('theme', JSON.stringify(theme));
+    }, [theme]);
 
-}
-
-
-
-    return <AuthContext.Provider value={{ StoreTheme, theme }}>
-        {children}
-    </AuthContext.Provider>
-}
+    return (
+        <AuthContext.Provider value={{ StoreTheme, theme }}>
+            {children}
+        </AuthContext.Provider>
+    );
+};
 
 export const useTheme = () => {
-    const authContextValue = useContext(AuthContext)
-    if(!authContextValue) {
-        throw new Error("useTheme used outside the provider")
+    const authContextValue = useContext(AuthContext);
+    if (!authContextValue) {
+        throw new Error("useTheme used outside the provider");
     }
     return authContextValue;
-}
+};

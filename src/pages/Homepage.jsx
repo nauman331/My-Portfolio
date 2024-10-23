@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 import * as THREE from 'three';
 import GLOBE from 'vanta/dist/vanta.globe.min';
 
+
 const Homepage = () => {
   const { theme } = useTheme();
   const register = useHoverRegister();
@@ -70,8 +71,7 @@ const Homepage = () => {
     <>
       <section className="home-section">
         <div ref={sectionRef} className="homer">
-          {/* Background overlay for mobile mode */}
-          <div className="homer-overlay"></div>
+     
 
           <SocialBox />
           <div className="name" style={{ marginTop: "5rem" }}>

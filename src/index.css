@@ -20,12 +20,10 @@ body {
 .light {
   background-color: #FAFAFA;
   color: #011933;
-  transition: 2s background-color ease;
 }
 .dark {
   background-color: #011933;
   color: #FAFAFA;
-  transition: 2s background-color ease;
 }
 a {
   text-decoration: none;
