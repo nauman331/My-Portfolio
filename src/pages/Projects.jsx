@@ -6,6 +6,7 @@ import pic3 from "../assets/images/projects/project3.webp"
 import pic4 from "../assets/images/projects/project4.webp"
 import pic5 from "../assets/images/projects/project5.webp"
 import pic6 from "../assets/images/projects/more.webp"
+import pic7 from "../assets/images/projects/project6.webp"
 
 const Projects = () => {
     const data = [
@@ -14,6 +15,12 @@ const Projects = () => {
             name: "CEP Exams",
             description: "Enhanced user Expereince on CEP Exams website(NextJs + TailwindCss) by adding features like search bar and pagination etc.",
             projectlink: "https://cepexam.com/"
+        },
+        {
+            imgurl: pic7,
+            name: "Prime BNB",
+            description: "A crypto DEFI website(Typescript + shadcn/magic ui) with solidity and web3",
+            projectlink: "https://prime-bnb.vercel.app/"
         },
         {
             imgurl: pic3,
