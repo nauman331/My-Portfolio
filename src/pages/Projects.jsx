@@ -14,37 +14,43 @@ const Projects = () => {
             imgurl: pic2,
             name: "CEP Exams",
             description: "Enhanced user Expereince on CEP Exams website(NextJs + TailwindCss) by adding features like search bar and pagination etc.",
-            projectlink: "https://cepexam.com/"
+            projectlink: "https://cepexam.com/",
+            category: "fullstack"
         },
         {
             imgurl: pic7,
             name: "Prime BNB",
             description: "A crypto DEFI website(Typescript + shadcn/magic ui) with solidity and web3",
-            projectlink: "https://prime-bnb.vercel.app/"
+            projectlink: "https://prime-bnb.vercel.app/",
+            category: "fullstack"
         },
         {
             imgurl: pic3,
             name: "Flappy Bird",
             description: "A crypto coin pre-sale website(Nextjs TailwindCss) with some animations",
-            projectlink: "https://flappybird-gules-sigma.vercel.app/"
+            projectlink: "https://flappybird-gules-sigma.vercel.app/",
+            category: "frontend"
         },
         {
             imgurl: pic1,
             name: "Zoi Network",
             description: "A crypto mining web application(mern stack) with some unique idea",
-            projectlink: "https://zoinetwork.vercel.app/"
+            projectlink: "https://zoinetwork.vercel.app/",
+            category: "fullstack"
         },
         {
             imgurl: pic4,
             name: "My Old Portfolio",
             description: "my old portfolio website(reactjs tailwindcss framer-mation)",
-            projectlink: "https://nauman-portfolio.vercel.app/"
+            projectlink: "https://nauman-portfolio.vercel.app/",
+            category: "frontend"
         },
         {
             imgurl: pic5,
             name: "1core",
             description: "Made responsive an already built crypto investment project(html css)",
-            projectlink: "https://nauman331.github.io/onecore.github.io/"
+            projectlink: "https://nauman331.github.io/onecore.github.io/",
+            category: "frontend"
         },
         {
             imgurl: pic6,

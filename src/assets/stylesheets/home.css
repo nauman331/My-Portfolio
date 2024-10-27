@@ -5,6 +5,7 @@
 
 .homer {
     z-index: 1; /* Ensures the text and other elements stay above the Vanta Globe */
+
 }
 
 .home-section .name {
@@ -60,6 +61,7 @@
     /* This class targets the Vanta.js canvas directly */
     .vanta-canvas {
         opacity: 0.4 !important;
+        margin-left: 3rem;
     }
     .homer  {
         width: 100%;

@@ -22,6 +22,17 @@
     width: 100%;
     padding: 1rem;
 }
+.filter-buttons button {
+    border: none;
+    width: 5rem;
+}
+.filter-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
 @media (min-width: 1000px) {
     .card-container {
         width: 65rem;
